@@ -21,8 +21,12 @@ public class Generic<E> {
         System.out.println();
     }
 
-    public void removeData(E entry) {
-        list.remove(entry);
+    public void removeData(int index) {
+        for (int i = 0; i < list.size(); i++) {
+            if(i == index){
+                list.remove(i);
+            }
+        }
     }
 
     public void setData(int index, E object2) {

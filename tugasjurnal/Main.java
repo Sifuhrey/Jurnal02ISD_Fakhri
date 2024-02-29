@@ -16,12 +16,9 @@ public class Main {
         daftarBag.addData(new Bag("C012", "Tempat Pensil", "Sidu", 5));
         daftarBag.addData(new Bag("C008", "Tas", "Converse", 15));
 
-        daftarATK.display();
-        daftarBag.display();
-
         daftarATK.setData(2, new ATK("A009","Spidol" , "Hitam", 27));
-        Bag hapus = new Bag("C004", "Tempat Pensil", "FB", 8);
-        daftarBag.removeData(hapus);
+        
+        daftarBag.removeData(2);
 
         daftarATK.display();
         daftarBag.display();
