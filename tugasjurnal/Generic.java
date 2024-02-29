@@ -1,12 +1,11 @@
-package praktikum2;
+package tugasjurnal;
 
 import java.util.*;
 
-public class GenArrayList<E> {
-
+public class Generic<E> {
     private final ArrayList<E> list;
 
-    public GenArrayList(int capacity) {
+    public Generic(int capacity) {
         int initCapacity = capacity > 0 ? capacity : 0;
         list = new ArrayList<>(initCapacity);
     }
@@ -26,8 +25,8 @@ public class GenArrayList<E> {
         list.remove(entry);
     }
 
-    public void setData(E object1, E object2) {
-        int index = list.indexOf(object1);
-        list.add(index, object2);
+    public void setData(int index, E object2) {
+        list.set(index, object2);
     }
+
 }
