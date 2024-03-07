@@ -22,8 +22,9 @@ public class Generic<E> {
     }
 
     public void removeData(int index) {
+        
         for (int i = 0; i < list.size(); i++) {
-            if(i == index){
+            if (i == index) {
                 list.remove(i);
             }
         }
